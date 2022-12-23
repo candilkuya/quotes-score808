@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Football Quotes Score808</title>
+  
+		<!--<link rel="stylesheet" href="style.css" />-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1;
+        font-weight: 400;
+         color: #fff;
+    
+        /* only works if there is nothing absolutely positioned in relation to body */
+        overflow-x: hidden;
+    
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #5372f0;
+    }
+    
+    .wrapper {
+        width: 100%;
+        background: #000;
+        border-radius: 15px;
+        padding: 30px 30px 25px;
+        
+    }
+    
+    .wrapper header {
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .wrapper .content {
+        margin: 35px 0;
+    }
+    
+    .content .quote-area {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .quote-area i {
+        font-size: 15px;
+    }
+    
+    .quote-area i:first-child {
+        margin: 3px 10px 0 0;
+    }
+    
+    .quote-area i:last-child {
+        display: flex;
+        align-items: flex-end;
+        margin: 0 0 3px 10px;
+    }
+    
+    .quote-area .quote {
+        font-size: 22px;
+        text-align: center;
+        /*word-break: break-all;*/
+    }
+    
+    .content .author {
+        display: flex;
+        font-size: 18px;
+        font-style: italic;
+        margin-top: 20px;
+        justify-content: flex-end;
+    }
+    
+    .author span:first-child {
+        margin: -7px 5px 0 0;
+        font-family: monospace;
+    }
+    
+    .wrapper .buttons {
+        border-top: 1px solid #ccc;
+    }
+    
+    .buttons .features {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    
+    .features ul {
+        display: flex;
+        gap: 0.8rem;
+    }
+    
+    .features ul li {
+        list-style: none;
+        /* margin: 0 5px; */
+        height: 3.6rem;
+        width: 3.6rem;
+        color: #5372f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #5372f0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .features ul li:hover {
+        color: #fff;
+        background: #5372f0;
+    }
+    
+    .features button {
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        font-style: 16px;
+        padding: 13px 22px;
+        border-radius: 30px;
+        background: #5372f0;
+    }
+    
+    button.loading {
+        opacity: 0.7;
+        pointer-events: none;
+        width: 100px;
+  margin-left: auto;
+  margin-right:auto;
+    }
+    
+    .features-icon {
+        font-size: 1.8rem;
+    }
+    h1{
+  font-family: courier;
+  max-width: 60%;
+  min-height: 2.8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+h1::after{
+  content: '_';
+  animation-name: typeWriter;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: all 0.2s;
+}
+@keyframes typeWriter{
+  0%  {opacity: 0;};
+  50% {opacity: 1;};
+  100%{opacity: 0;};
+}
+
+#textI{
+  width: 100%;
+  height: 50px;
+  font-family: arial;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 3px;
+  border: 0px solid #fff;
+}
+p{
+  text-align: center;
+  font-family: arial;
+  font-size: 54px;
+  font-weight: 600;
+}
+.typewriter {
+  background-color: #fff;
+  margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  padding: 0em 2em 0em 1.5em;
+  border: solid 1px #e6e6e6;
+  border-radius: 2.8em;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.typewriter svg {
+  padding-right: 2em;
+}
+
+.typewriter p {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  width: 0;
+  max-width: max-content;
+  overflow: hidden; 
+  border-right: .05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+}
+
+.max-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+@keyframes swim {
+  from {
+    transform: translateX(70%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+
+svg {
+}
+
+main-loader{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.field{
+  background-color: #000; 
+  position: relative;
+}
+.football {
+  height:50px;
+  width:50px;
+  background-image: url('http://cdn.staticneo.com/w/pes/thumb/0/08/GenericFootball.png/50px-GenericFootball.png');
+  top: 100%;
+  left: 40%;
+  position: absolute;
+  
+  -webkit-animation: football 8s linear infinite, football .1s linear 50s infinite, football_up_down 1s linear infinite;
+  animation: football 8s linear infinite, football .1s linear 50s infinite, football_up_down 1s linear infinite;
+}
+
+@-webkit-keyframes football_up_down {  
+  0% { transform:rotate(180deg); top:100% } 
+  50% { transform:rotate(360deg); top:30%; } 
+  100% { transform:rotate(540deg); top:100% } 
+}
+@keyframes football_up_down {  
+  0% { transform:rotate(180deg); top:100% } 
+  50% { transform:rotate(360deg); top:30%; } 
+  100% { transform:rotate(540deg); top:100% } 
+}</style>
+	</head>
+
+	<body>
+        <div class="max-width">
+            <div class="typewriter">
+    <!-- Search icon by https://www.flaticon.com/authors/good-ware -->
+    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="16px" version="1.1" viewBox="-1 0 136 136" width="16px">
+      <g id="surface1">
+      <path d="M 93.148438 80.832031 C 109.5 57.742188 104.03125 25.769531 80.941406 9.421875 C 57.851562 -6.925781 25.878906 -1.460938 9.53125 21.632812 C -6.816406 44.722656 -1.351562 76.691406 21.742188 93.039062 C 38.222656 104.707031 60.011719 105.605469 77.394531 95.339844 L 115.164062 132.882812 C 119.242188 137.175781 126.027344 137.347656 130.320312 133.269531 C 134.613281 129.195312 134.785156 122.410156 130.710938 118.117188 C 130.582031 117.980469 130.457031 117.855469 130.320312 117.726562 Z M 51.308594 84.332031 C 33.0625 84.335938 18.269531 69.554688 18.257812 51.308594 C 18.253906 33.0625 33.035156 18.269531 51.285156 18.261719 C 69.507812 18.253906 84.292969 33.011719 84.328125 51.234375 C 84.359375 69.484375 69.585938 84.300781 51.332031 84.332031 C 51.324219 84.332031 51.320312 84.332031 51.308594 84.332031 Z M 51.308594 84.332031 " style=" stroke:none;fill-rule:nonzero;fill:#464545;fill-opacity:1;" /></g></svg>
+      <input id="textI" type="text" value=" ">
+    </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+        <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+          <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+		<div class="wrapper">
+      
+			<header>Quote of the Day</header><br/>
+      <div class="field">
+        <div class="football">
+        </div>
+      <div>
+			<div class="content">
+
+				<div class="quote-area">
+					<i class="fas fa-quote-left"></i>
+					<p class="quote" id="text">
+                       Follow @score808indonesia
+					</p>
+					<i class="fas fa-quote-right"></i>
+				</div>
+				<div class="author">
+					<span>__</span>
+					<span class="name">Score808 Indonesia</span>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class="features">
+					<ul>
+						<li class="sound">
+							<i class="fas fa-volume-up features-icon"></i>
+						</li>
+						<li class="copy"><i class="fas fa-copy features-icon"></i></li>
+						<li style="display:none;" class="twitter">
+							<i class="fab fa-twitter features-icon"></i>
+						</li>
+					</ul>
+					<button id="start">Football Quotes</button>
+				</div>
+			</div>
+   </div>
+   
+      </div>
+		</div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+          <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+	</body>
+    <script>
+        const quoteText = document.querySelector(".quote"),
+	authorName = document.querySelector(".name"),
+	quoteBtn = document.querySelector("button"),
+	soundBtn = document.querySelector(".sound"),
+	copyBtn = document.querySelector(".copy"),
+	twitterBtn = document.querySelector(".twitter");
+
+function randomQuote() {
+	quoteBtn.classList.add("loading");
+	quoteBtn.innerText = "Loading Quote...";
+	fetch("https://api.quotable.io/random")
+		.then((res) => res.json())
+		.then((result) => {
+			quoteText.innerText = result.content;
+			authorName.innerText = result.author;
+			quoteBtn.innerText = "New Quote";
+			quoteBtn.classList.remove("loading");
+		});
+}
+
+soundBtn.addEventListener("click", () => {
+	let utterance = new SpeechSynthesisUtterance(
+		`${quoteText.innerText} by ${authorName.innerText} `
+	);
+	speechSynthesis.speak(utterance);
+});
+
+copyBtn.addEventListener("click", () => {
+	// copy text to the clipboard using WriteText()
+	navigator.clipboard.writeText(quoteText.innerText);
+});
+
+twitterBtn.addEventListener("click", () => {
+	let tweeturl = `https://twitter.com/intent/tweet?url=${quoteText.innerText} ~${authorName.innerText}~ `;
+	window.open(tweeturl, "_blank");
+});
+
+//quoteBtn.addEventListener("click", randomQuote);
+
+// Automatically changes the Quotes every 30 seconds
+//setInterval(randomQuote, 1000 * 30);
+
+var textI = document.getElementById('textI').value;
+var textC = document.getElementById('text');
+textC.textContent = textI;
+
+var restart = document.getElementById('start');
+
+restart.onclick = function(){
+  textI = document.getElementById('textI').value;
+  textC = document.getElementById('text');
+  textC.textContent = textI;
+  TypeWriter();
+}
+
+function TypeWriter(){
+  var text = textC.textContent;
+  var textL = text.length;
+  var j = textL;
+  var textArr = [];
+  var textFArr = [];
+  var textF = '';
+  
+  
+  //delete text
+  textC.textContent = '';
+
+
+
+  function create_textArr(){
+    for( var i = 0; i < textL; i++ ){
+      textArr.push([text.substring( 0, 1 ), i]);
+      text = text.slice(1);
+      textFArr = textArr;
+    }
+  }
+
+  function write_text(){
+
+    if(textFArr.length > 0){
+      textF += textArr[0][0];
+      textFArr.shift();
+      textC.textContent = textF;
+    }else{
+      clearInterval(intervall);
+    }
+  }
+
+  //Interval
+
+     var intervall = setInterval(write_text,150);
+
+
+
+  create_textArr();
+
+  //restart
+  function restart_typing(){
+    console.log('click');
+    create_textArr();
+    textC.textContent = '';
+    setInterval(write_text,150);
+    write_text();
+  }
+}
+</script>
+</html>
