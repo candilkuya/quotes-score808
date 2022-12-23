@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Football Quotes Score808</title>
+		<title>Football Score808</title>
   
 		<!--<link rel="stylesheet" href="style.css" />-->
 		<link
@@ -270,7 +270,59 @@ main-loader{
   0% { transform:rotate(180deg); top:100% } 
   50% { transform:rotate(360deg); top:30%; } 
   100% { transform:rotate(540deg); top:100% } 
-}</style>
+}
+.mywrapper{
+  height: 100px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 1.5s linear infinite;
+}
+.mywrapper .display,
+.mywrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mywrapper .display{
+  z-index: 999;
+  height: 85px;
+  width: 345px;
+  background: #1b1b1b;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 85px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.mywrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.mywrapper span:first-child{
+  filter: blur(7px);
+}
+.mywrapper span:last-child{
+  filter: blur(20px);
+}
+</style>
 	</head>
 
 	<body>
@@ -300,10 +352,18 @@ main-loader{
     <br/>
     <br/>
     <br/>
+    <div class="mywrapper">
+      <div class="display">
+        <div id="time">
+</div>
+</div>
+<span></span>
+      <span></span>
+    </div>
     <br/>
 		<div class="wrapper">
       
-			<header>Quote of the Day</header><br/>
+			<header>Today's Matches</header><br/>
       <div class="field">
         <div class="football">
         </div>
@@ -319,7 +379,7 @@ main-loader{
 				</div>
 				<div class="author">
 					<span>__</span>
-					<span class="name">Score808 Indonesia</span>
+					<span class="name">@Score808Indonesia</span>
 				</div>
 			</div>
 			<div class="buttons">
@@ -333,7 +393,7 @@ main-loader{
 							<i class="fab fa-twitter features-icon"></i>
 						</li>
 					</ul>
-					<button id="start">Football Quotes</button>
+					<button id="start">Streaming</button>
 				</div>
 			</div>
    </div>
@@ -459,5 +519,27 @@ function TypeWriter(){
     write_text();
   }
 }
+setInterval(()=>{
+        const time = document.querySelector(".display #time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let day_night = "AM";
+        if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+        }
+        if(seconds < 10){
+          seconds = "0" + seconds;
+        }
+        if(minutes < 10){
+          minutes = "0" + minutes;
+        }
+        if(hours < 10){
+          hours = "0" + hours;
+        }
+        time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+      });
 </script>
 </html>
